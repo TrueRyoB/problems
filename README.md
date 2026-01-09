@@ -1,2 +1,5 @@
-# problems
-original competitive programming problems by TrueRyoB
+# Problems
+I post a bunch of original competitive programming-related problems as memorandum.
+
+## License
+MIT License
