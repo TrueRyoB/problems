@@ -11,7 +11,7 @@ You are given $T$ queries. For each query, determine the number of unordered pai
 - $1 \leq K \lt 32$
 - $2 \leq N \leq 10^5$
 - $1 \lt r_i \leq 2^{K-1}$
-- $0 \leq y_i, x_i \lt R$
+- $0 \leq y_i, x_i \lt 2^K$
 - $|dy_i|, |dx_i| \leq 10$
 - $1 \leq T \leq 10$
 - $1 \leq t_i \leq 10^{100}$
