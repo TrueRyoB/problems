@@ -1,7 +1,7 @@
 # Large Number
-You are given integers $a$, $b$, $c$, $d$, $e$, $f$, $g$, $h$.
+You are given integers $a$, $b$, $c$, $d$, $e$, $f$.
 
-Is $a+(bc)^d \leq e+(fg)^h$?
+Is $a+b^c \leq d+e^f$?
 
 ## Constraints
-- $|a|, |b|, |c|, |d|, |e|, |f|, |g|, |h| \leq 10^{10^5}$
+- $|a|, |b|, |c|, |d|, |e|, |f| \leq 10^{10^5}$
