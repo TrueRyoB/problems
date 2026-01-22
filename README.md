@@ -4,6 +4,9 @@ Here, I post a bunch of original competitive programming-related problems as mem
 Warning: not all problems have solutions attached.
 
 ## By difficulty
+### Gray Tier
+- [Greedy](https://github.com/TrueRyoB/problems/blob/main/Greedy/problem.md)
+
 ### Green Tier
 - [Determinant](https://github.com/TrueRyoB/problems/blob/main/Determinant/problem.md)
 - [Centroid](https://github.com/TrueRyoB/problems/blob/main/Centroid/problem.md)
