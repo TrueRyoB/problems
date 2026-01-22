@@ -35,7 +35,7 @@ You may seize only one component at a time.
 Determine the minimum possible total value lost by the city through optimal use of your magical seize oeprations.
 
 ## Constraints
-- $1 \leq W, H \leq 10^3$
+- $1 \leq W, H \leq 300$
 - $0 \leq A_{i,j} \leq 10^9$
 - $1 \leq N \leq WH$
 - $1 \leq x_i \leq W$
