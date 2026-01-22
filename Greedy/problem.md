@@ -1,5 +1,5 @@
 # Greedy
-Find the max sum of a substring of a sequence of integer $A$.
+Find the max sum of a substring of an integer sequence $A$.
 
 ## Constraints
 - $-10^9 \leq A_i \leq 10^9$
