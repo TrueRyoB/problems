@@ -15,22 +15,21 @@ Time proceeds in discrete steps. At each step:
 
 Each housing is always in exactly one of the following states:
 - Normal: neither burning nor seized
-- Burning
+- Fire: burning
 - Seized: Fire is suppressed; fire neither spreads from nor enters this housing
 
 --- 
 
 When a housing enters the Fire state, the city permanently loses its full value $A_{i,j}$. If the same housing catches fire again later, no additional cost is incurred.
 
-You are a magical fire fighter and pay perform the following operation at any time step:
+You are a magical fire fighter and may perform the following operation at any time step:
 - You may select one connected component of housings currently on fire.
 - All housings in the selected component immediately enters the Seized state.
-- Let $M$ be the number of housings in that component.
 - A seized component of size $M$ required $\lceil \log_4 M \rceil$ discrete time steps to be completely removed.
-- During these steps, the housings remain Seized.
+- During these steps, the housings remain seized.
 - After the removal time finishes, all housings in the component return to the Normal state.
 
-You may freeze only one component at a time.
+You may seize only one component at a time.
 
 --- 
 Determine the minimum possible total value lost by the city through optimal use of your magical seize oeprations.
