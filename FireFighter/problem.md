@@ -25,7 +25,7 @@ When a housing enters the Fire state, the city permanently loses its full value 
 You are a magical fire fighter and may perform the following operation at any time step:
 - You may select one connected component of housings currently on fire.
 - All housings in the selected component immediately enters the Seized state.
-- A seized component of size $M$ required $\lceil \log_4 M \rceil$ discrete time steps to be completely removed.
+- A seized component of size $M$ required $\lceil \log_4 M \rceil + 1$ discrete time steps to be completely removed.
 - During these steps, the housings remain seized.
 - After the removal time finishes, all housings in the component return to the Normal state.
 
