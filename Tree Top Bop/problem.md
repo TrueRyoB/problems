@@ -1,4 +1,4 @@
-# Crush Gold
+# Tree Top Bop
 As the protagonist of a popular platformer game, you earn gold by crushing enemies.
 
 ### Player rules
