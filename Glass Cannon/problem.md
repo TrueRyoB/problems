@@ -51,6 +51,12 @@ $$
 \min_{a, s, h} \frac{1}{T} \sqrt{\sum_{i}^{N} (W_i-0.5)^2}
 $$
 
+Meanwhile, the paramers must meet the following relationship for persuasion.
+
+$$
+(1+a)(1+s)=\frac{1}{1-h}
+$$
+
 ## Task
 Determine one possible combination of positive floating numbers $(a, s, h)$ that satisfies the Glass Cannon fantasy while keeping the balance impact close to neutral.
 
