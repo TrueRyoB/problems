@@ -19,7 +19,7 @@ $$
 \mathrm{Damage}(i,j) = \max(1, \lfloor \frac{AD_i}{2} - \frac{AR_j}{4} \rfloor)
 $$
 $$
-\mathrm{Current Health}(i,j,t) = \max(0, H_i - \mathrm{Damage}(j, i) * \lceil \frac{1}{AS_j} \rceil)
+\mathrm{Current Health}(i,j,t) = \max(0, H_i - \mathrm{Damage}(j, i) * \lceil \frac{t}{AS_j} \rceil)
 $$
 
 Champions attack until one of their health reaches zero.
