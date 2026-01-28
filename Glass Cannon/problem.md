@@ -16,7 +16,7 @@ Each champion $i$ has the following base attributes:
 - Each basic attack deals damage computed as:
 
 $$
-Damage(i,j) = \max(1, \frac{AD_i}{2} - \frac{AR_j}{4})
+Damage(i,j) = \max(1, \lfloor \frac{AD_i}{2} - \frac{AR_j}{4} \rfloor)
 $$
 
 Champions attack until one of their health reaches zero.
