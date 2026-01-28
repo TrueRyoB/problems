@@ -1,6 +1,6 @@
 # Glass Cannon
 You are a game technical designer working on balance adjustments for League of Legends.
-Your task is to configure a new buff, Glass Cannon, so that the affected champions collectively achieve an average win rate close to 50%, while minimizing the standard deviation from 50% across those champions.
+Your task is to configure a new buff, Glass Cannon, so that the affected champions collectively achieve a moderated win rate close to 50%.
 
 You are given stats for $N$ champions.
 Each champion $i$ has the following base attributes:
@@ -51,7 +51,7 @@ Let $W_i$ denote the resulting win rate of buffed champion $i$.
 The objective is to minimize the standard deviation from the target win rate of 50% as follows:
 
 $$
-\min_{a, s, h} \frac{1}{T} \sqrt{\sum_{i}^{N} (W_i-0.5)^2}
+\mathrm{L}(N, T, a, s, h)=\min_{a, s, h} \frac{1}{N} \sqrt{\sum_{i}^{N} \exp^{\lambda \dot |W_i-0.5|} \dot (W_i-0.5)^2}
 $$
 
 Meanwhile, the paramers must meet the following relationship for persuasion.
@@ -69,4 +69,5 @@ Determine one possible combination of positive floating numbers $(a, s, h)$ that
 - $0 \lt AS_i \leq 10.0$
 - $1 \leq T \lt N$
 - $1 \leq t_i \leq N$
+- $0 \leq \lambda \leq 10$
 - Every input is integer but $AS_i$
