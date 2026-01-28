@@ -7,7 +7,7 @@ The theater consists of three types of seating:
 
 You can pass through any seating if not in the state "A". 
 
-- a query triggers a toggle to all occupied seating
+- a query triggers a toggle to all occupied seating on a cross at an arbitrary center next to your current position
 - return the minimum query req to walk out
 
 ## Constraints
