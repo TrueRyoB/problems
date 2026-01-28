@@ -16,4 +16,4 @@ Determine the maximum total gold gain in a single attempt.
 - $1 \leq N \leq 10^5$
 - $1 \leq x_i \leq 10^{10}$
 - $i \lt j \to x_i \lt x_j$
-- $1 \leq t_i \leq 3$
+- $1 \leq t_i \leq 10^{10}$
