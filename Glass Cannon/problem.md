@@ -28,7 +28,7 @@ $$
 \begin{cases}
 1   & \text{if } i \text{ defeats } j, \\
 0   & \text{if } j \text{ defeats } i, \\
-0.5 & \text{if both } i \text{ and } j \text{ are buffed}.
+0.5 & \text{if both } i \text{ and } j \text{ are slain simultaneously}.
 \end{cases}
 $$
 
