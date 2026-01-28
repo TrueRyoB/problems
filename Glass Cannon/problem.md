@@ -65,8 +65,8 @@ Determine one possible combination of positive floating numbers $(a, s, h)$ that
 
 ## Constraints
 - $2 \leq N \leq 10^5$
-- $1 \leq H_i, AD_i, AR_i\leq 10^{10}$
-- $0 \lt AS_i \leq 5.0$
+- $1 \leq H_i, AD_i, AR_i\leq 10^5$
+- $0 \lt AS_i \leq 10.0$
 - $1 \leq T \lt N$
 - $1 \leq t_i \leq N$
 - Every input is integer but $AS_i$
