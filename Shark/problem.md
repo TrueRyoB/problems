@@ -12,7 +12,7 @@ For each opportunity, you can cast a spell $(k, d)$.
 
 The shark chooses to move to another ragoon after the cast, if and and only if the current ragoon is not suppressed and there exists at least one adjacent ragoon not suppressed.
 
-Locate the position of the shark and confirms that it's suppresed, before you run out of your spells.
+Locate the position of the shark and confirm that it's suppresed, before you run out of your spells.
 
 ## Constraints
 - $3 \leq N \leq 10^5$
