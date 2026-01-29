@@ -1,0 +1,20 @@
+# Shark
+This problem is interactive.
+
+There $N$ ragoons and $M$ channels, where $i$ interconnects the ragoons $u_i$ and $v_i$.
+
+In the middle of summer, you are noticed that there is a shark in one of the ragoons. Your mission is to suppress the shark and promise the marinal safety.
+
+For each opportunity, you can cast a spell $(k, d)$.
+- $k$ must be unselected and in the range $[1, N]$
+- $k$-th ragoon is now suppressed
+- you are noticed if a shark is present in any ragoons in a range $d$.
+
+The shark chooses to move to another ragoon after the cast, if and and only if the current ragoon is not suppressed and there exists at least one adjacent ragoon not suppressed.
+
+Locate the position of the shark and confirms that it's supresed, before you run out of your spells.
+
+## Constraints
+- $3 \leq N \leq 10^5$
+- $1 \leq M \leq \min(10^5, \frac{N(N-1)}{2})$
+- $1 \leq u_i \lt v_i \leq N$
