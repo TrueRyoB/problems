@@ -3,6 +3,8 @@ Here, I post a bunch of original competitive programming-related problems as mem
 
 Warning: not all problems have solutions attached.
 
+ ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=TrueRyoB.problems)
+
 ## By difficulty
 ### Gray Tier
 - [Greedy](https://github.com/TrueRyoB/problems/blob/main/Greedy/problem.md)
