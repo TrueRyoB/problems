@@ -16,6 +16,6 @@ Locate the position of the shark and confirm that it's suppresed, before you run
 
 ## Constraints
 - $3 \leq N \leq 10^5$
-- $1 \leq M \leq \min(10^5, \frac{N(N-1)}{2})$
+- $N-1 \leq M \leq \min(10^5, \frac{N(N-1)}{2})$
 - $1 \leq u_i \lt v_i \leq N$
 - $i \neq j \to (u_i, v_i) \neq (u_j, v_j)$
