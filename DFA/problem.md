@@ -8,4 +8,4 @@ A machine should accept strings if it contains at least $A$ of "0" and at most $
 Solve the number of states you need to build the machine.
 
 ## Constraints
-- $0 \leq A, B \leq 10^{10^{5}}$
+- $0 \leq A, B \leq 10^{10^{3}}$
