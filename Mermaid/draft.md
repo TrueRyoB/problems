@@ -1,15 +1,15 @@
 # Mermaid
-There are $N$ buttons. Your goal is to enable $K$ buttons. Initially, the button $B$ is enabled.
+There are $N$ buttons.
 
-Pressing the button $i$ will enable $A_i$ buttons.
+Each button $i$ has an associated value $A_i$. A button can be pressed only while it is enabled.
 
-What is the minimum number of times to meet the goal? If it's impossible, yield $-1$ instead.
+Initially, $M$ buttons are enabled. When button $i$ is pressed, it enables button $C_i$.
 
+What is the maximum possible total value of enabled buttons?
 
 ## Constraints
-- $2 \leq K \leq N \leq 10^5$
-- $1 \leq B \leq N$
-- $0 \leq A_i \leq N$
-- $1 \leq a_{i,j} \leq N$
-- $x \neq y \to a_{i, x} \neq a_{i, y}$
-- $\sum A_i \leq 10^5$
+- $2 \leq N \leq 10^5$
+- $|A_i| \leq 10^{10}$
+- $1 \leq M \leq N$
+- $1 \leq m_i \leq N$
+- $1 \leq C_i \leq N$
