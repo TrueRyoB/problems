@@ -8,5 +8,7 @@ What is the minimum number of times you have to press buttons to enable the majo
 
 ## Constraint
 - $1 \leq M \leq N \leq 10^5$
+- $1 \leq m_i \leq N$
 - $0 \leq A_i, B_i \leq 10^5$
+- $1 \leq a_i, b_i \leq N$
 - $\sum A_i, \sum B_i \leq 10^5$
