@@ -6,10 +6,10 @@ Pressing the button $i$ will enable $A_i$ buttons, and will disable $B_i$ button
 What is the minimum number of times you have to press buttons to enable the majority of buttons? If it's impossible, yield $-1$ instead.
 
 
-## Constraint
+## Constraints
 - $1 \leq M \leq N \leq 10^5$
 - $1 \leq m_i \leq N$
-- $0 \leq A_i, B_i \leq 10^5$
+- $0 \leq A_i, B_i \leq N$
 - $1 \leq a_{i,j}, b_{i,j} \leq N$
 - $\forall x \forall y | a_{i, x} \neq b_{i, y}$
 - $x \neq y \to a_{i, x} \neq a_{i, y} \land b_{i, x} \neq b_{i, y}$
