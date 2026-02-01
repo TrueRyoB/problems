@@ -1,4 +1,4 @@
-# Mermaid
+# Mermaidyn
 There are $N$ buttons.
 
 Each button $i$ has an associated value $A_i$. 
