@@ -3,7 +3,7 @@ There are $N$ buttons.
 
 Each button $i$ has an associated value $A_i$. 
 
-When button $i$ is pressed, it enables button $C_i$. A button can be pressed only while it is enabled.
+A button can be pressed only while it is enabled. Button $i$ enables button $C_i$ on press. 
 
 Initially, $M$ buttons are enabled, and their indices $m_1, m_2, \dots, m_M$ are given.
 
