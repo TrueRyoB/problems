@@ -1,4 +1,4 @@
-# Mermaidyn
+# Mermaid
 There are $N$ buttons.
 
 Each button $i$ has an associated value $A_i$. 
@@ -8,7 +8,7 @@ A button can be pressed only while it is enabled. Button $i$ enables button $C_i
 Initially, $M$ buttons are enabled, and their indices $m_1, m_2, \dots, m_M$ are given.
 
 
-What is the maximum possible total value of enabled buttons?
+Solve the maximum total value of enabled buttons.
 
 ## Constraints
 - $2 \leq N \leq 10^5$
