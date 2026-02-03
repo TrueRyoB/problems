@@ -1,0 +1,11 @@
+# Scheduling
+You have a class pool of $N$ lectures.
+
+Lecture $i$ offers $M_i$ sessions, where a session $j$ is held from $t_{i, j, 1}$ to $t_{i, j, 2}$.
+
+Determine if it's possible to take all lectures without any time duplications.
+
+## Constraints
+- $1 \leq N \leq 10^5$
+- $\sum M_i \leq 10^5$
+- $0 \leq t_{j, 1} \lt t_{j, 2} \leq 10^{10}$
