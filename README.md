@@ -18,7 +18,7 @@ Warning: not all problems have solutions attached.
 - [Concatenation](https://github.com/TrueRyoB/problems/blob/main/Concatenation/problem.md)
 - [Large Number](https://github.com/TrueRyoB/problems/blob/main/LargeNumber/problem.md)
 - [Glass Cannon](https://github.com/TrueRyoB/problems/blob/main/Glass%20Cannon/problem.md)
-- [Mermaidyn](https://github.com/TrueRyoB/problems/blob/main/Mermaidyn/problem.md)
+- [Mermaid](https://github.com/TrueRyoB/problems/blob/main/Mermaid/problem.md)
 
 ### Yellow Tier
 - [Faster N!](https://github.com/TrueRyoB/problems/blob/main/Faster%20N!/problem.md)
