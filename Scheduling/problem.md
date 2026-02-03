@@ -1,7 +1,7 @@
 # Scheduling
 You have a class pool of $N$ lectures.
 
-Lecture $i$ offers $M_i$ sessions, where a session $j$ is held from $t_{i, j, 1}$ to $t_{i, j, 2}$.
+Lecture $i$ offers $M_i$ sessions, where a session $j$ is held from $t_{i, j, 1}$ to $t_{i, j, 2}$. You need to choose one session for enrollment.
 
 Determine if it's possible to take all lectures without any time duplications.
 
