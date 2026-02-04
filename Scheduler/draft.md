@@ -31,7 +31,7 @@ Seats are depleted cumulatively across queries.
 - $1 \leq M_i \leq 10$
 - $0 \leq t_{i,j,1} \lt t_{i,j,2} \leq 10^{10}$
 - $1 \leq P_{i,j} \leq 100$
-- $1 \leq Q \leq 10^5$
+- $1 \leq Q \leq 10$
 - $1 \leq C_q \leq 18$
 - $l \in L_q | 1 \leq l \leq N$
 - $1 \leq D_q \leq 10^{10}$
