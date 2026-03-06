@@ -6,6 +6,5 @@ Your goal is to verify whether the minimum excluded value of the array is exactl
 Find $E$ mod $998244353$.
 
 ## Constraints
-- $0 \leq N \leq 10^9$
-- $0 \leq T \leq N$
+- $0 \leq N, T \leq 10^9$
 - $0 \leq P \lt 998244353$
