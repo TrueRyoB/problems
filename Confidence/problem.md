@@ -1,9 +1,9 @@
 # Confidence
-You have $H$ rows of data, where each row consists of $W$ columns holding floating numbers $A_{i,j}$.
+You are given a dataset with $H$ rows and $W$ colmns, where each row corresponds to the same target.
 
-Each floating number indicates a confidence level for the target object to be the attribute corresponding to the column index.
+Each entry $A_{i,j}$ denotes the confidence score for the $j$-th attribute.
 
-Construct your approach in categorizing the target and design an implementation that returns the classification result.
+Design an implementation and output the classification result.
 
 ## Constraints
 - $1 \leq H \leq 10^5$
