@@ -28,4 +28,4 @@ Your final performance is evaluated based on the **sum** of $V_i$ across all $Q$
 * $1 \leq T_i < N_i$
 * $0 \leq M_i < N_i$ (Look-ahead/Decision delay constraint)
 * $1 \leq W_i \leq 10$
-* $1 \leq A_{i, j, k} \leq 1000$
+* $1 \leq A_{i, j, k} \leq 100$
