@@ -1,85 +1,69 @@
-# Editorial
-It is expected to abstract the problem statement into functional graph, a context in graph theory, before designing an implementation.
+# Editorial: Mermaid
 
-<details><summary>What is functional graph?</summary>
-	It refers to a set of nodes and directed edges where every node has exactly one edge.
-	It consists of trees and cycles.
-</details>
+The problem asks us to find a subset of nodes with maximum total weight such that every node in the subset is "justified" by a path from a source node $M$ within that same subset.
 
-## Brute force approach
-It is possible to solve this problem by testing out all the patterns, costing $O(N2^N)$ runtime complexity.
+### 1. Graph Abstraction: The Functional Graph
 
-A certain subset of nodes satisfy the reachability if
-1. The set contains $M$ as a subset
-2. The breath-first search from initial nodes reaches to every node in the set
+A **Functional Graph** is a directed graph where every node has exactly one outgoing edge.
 
-The solution is the maximum value of the sum of $A_i$ in across accepted subsets.
+* **Structure:** It consists of several connected components. Each component contains exactly one directed cycle, with several trees rooted on the cycle nodes pointing toward the cycle.
 
-This approach is valid for $N \leq 20$.
+### 2. The Reachability Constraint
 
-```cpp:O(2^N) solution
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
+A subset of nodes $S$ is valid if for every $u \in S$:
 
-	constexpr long INF = 1ll << 60;
-	int N, M;
-	vector<long> A;
-	vector<bool> initialized;
-	vector<int> in_deg, C;
-	cin >> N;
-	A.resize(N), initialized.assign(N, false), in_deg.assign(N, 0), C.resize(N);
-	for (auto &x : A) cin >> x;
-	for (int i = 0; i < N; i++) {
-		cin >> C[i]; C[i]--;
-		if (i != C[i]) in_deg[C[i]] += 1;
-	}
-	cin >> M;
-	int base = 0;
-	queue<int> queue_base;
-	vector d_base(N, false);
-	for (int i = 0; i < M; i++) {
-		int m;
-		cin >> m; m--;
-		base |= 1 << m;
-		queue_base.push(m);
-		d_base[m] = true;
-		initialized[m] = true;
-	}
+1. $u \in M$ (it is a predefined source), OR
+2. There exists some $v \in S$ such that $v \to u$ (the predecessor is also in the set).
 
-	long answer = -INF;
-	for (int i = 0; i < 1 << N; i++) if ((base & i) == base) {
-		auto bfs_queue = queue_base;
-		auto d = d_base;
-		while (!bfs_queue.empty()) {
-			int u =bfs_queue.front(); bfs_queue.pop();
-			int v = C[u];
-			if ((i & 1 << v) && !d[v]) d[v] = true, bfs_queue.push(v);
-		}
+This means if you pick a node that isn't a source, you **must** pick at least one of its "parents" (nodes pointing to it) to satisfy the reachability requirement.
 
-		long tmp{};
-		for (int j = 0; j < N; j++)
-			if ((i & 1 << j) && !d[j]) tmp = -INF;
-			else if (i & 1 << j) tmp += A[j];
-		answer = max(answer, tmp);
-	}
-	cout << answer << endl;
+## Approach 1: Brute Force $O(2^N \cdot N)$
+
+For small $N$ ($N \leq 20$), we can iterate through all $2^N$ possible subsets. For each subset, we check if all nodes are reachable from the intersection of the subset and $M$ using only edges within the subset.
+
+```cpp
+inline bool is_valid(int mask) {
+	return (mask & source_mask) == mask;
 }
 
 ```
 
-## Dynamic Programming approach
+## Approach 2: Dynamic Programming $O(N)$
 
-It is possible to compress irrelevant states of $O(2^N)$ into $O(N)$ owing to the following properties of this problem.
-- A value of each node depends only on a set of parent nodes
-- The asked operation is monoid.
+Since the graph is a collection of components with one cycle each, we can solve this using **Tree DP** followed by **Cycle DP**.
 
-The entire search process is as follows.
-1. BFS on nodes that are guaranteed to be connected
-2. BFS on nodes that are not necessarily connected
-3. BFS on topologically sorted nodes that takes the maximum valid subset
+### Step 1: Tree DP (Topological Sort)
 
-```cpp:O(N)
+We process the trees pointing towards the cycles starting from the leaves (nodes with in-degree 0).
+For a node $u$, let:
+
+* $dp[u][false]$: Max weight of a valid subtree rooted "below" $u$, where $u$ is **not** included.
+* $dp[u][true]$: Max weight of a valid subtree rooted "below" $u$, where $u$ **is** included and reachable from a source within its subtree.
+
+**Transitions:**
+To compute $dp[u][true]$:
+
+1. If $u \in M$, we can include any optimal subtrees from its parents: $A[u] + \sum \max(dp[p][false], dp[p][true])$.
+2. If $u \notin M$, we **must** pick at least one parent $p$ such that $p$ is in the state $dp[p][true]$. If all parents are better off being excluded or are in state $0$, we must force the "least bad" parent to be in state $1$.
+
+### Step 2: Handling the Cycles
+
+After the topological sort, only the cycles remain. Each node on the cycle now has a weight and a "pre-calculated" value from its attached trees.
+
+Because a cycle has a circular dependency, we can't use standard DP. Instead:
+
+1. **Break the cycle:** Pick an arbitrary edge $u \to v$ on the cycle.
+2. **Two passes:** * **Case A:** Node $u$ is not included.
+* **Case B:** Node $u$ is included (which helps satisfy the reachability of $v$).
+
+
+3. Run a linear DP around the remaining path.
+
+---
+
+## Optimized Implementation
+
+```cpp
 #pragma GCC optimize("O3")
 #include <vector>
 #include <iostream>
@@ -241,8 +225,10 @@ int main() {
 
   return 0;
 }
+
 ```
 
-## Credit
-- [rykazari](https://github.com/rykazari-h): tester
-- [RyoB](https://github.com/TrueRyoB): writer
+### Complexity Analysis
+
+* **Time Complexity:** $O(N)$ because each node and edge is visited a constant number of times during topological sort and cycle traversal.
+* **Space Complexity:** $O(N)$ to store the graph and DP states.
