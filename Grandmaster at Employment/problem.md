@@ -2,7 +2,7 @@
 
 ## Problem Description
 
-This is an **online heuristic optimization problem** consisting of $Q$ independent test cases. Your goal is to maximize the **median score** across all queries.
+This is an **online heuristic optimization problem** consisting of $Q$ independent test cases. Your goal is to maximize the **sum of the scores** across all queries.
 
 ### The Interview Process
 
@@ -18,7 +18,7 @@ The total value of a hired team for query $i$ is the **product of the sums** of 
 
 $$V_i = \prod_{k=1}^{W_i} \left( \sum_{j \in S} A_{i, j, k} \right)$$
 
-Your final performance is evaluated based on the **median** value of $V_i$ across all $Q$ queries.
+Your final performance is evaluated based on the **sum** of $V_i$ across all $Q$ queries.
 
 ## Constraints
 
