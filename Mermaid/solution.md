@@ -1,5 +1,8 @@
 # Editorial: Mermaid
 
+- [rykazari](https://github.com/rykazari-h): tester
+- [RyoB](https://github.com/TrueRyoB): writer
+
 The problem asks us to find a subset of nodes with maximum total weight such that every node in the subset is "justified" by a path from a source node $M$ within that same subset.
 
 ### 1. Graph Abstraction: The Functional Graph
