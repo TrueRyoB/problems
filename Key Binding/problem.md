@@ -17,6 +17,7 @@ Output the matching result.
 - $|S| = N$
 - $1 \leq M \leq 10^2$
 - $1 \leq |b_i|$
+- $i \neq j \to b_i \neq b_j$
 - $\sum |b_i| \leq 10^5$
 - $1 \leq c_j \leq 10^4$
 - $1 \leq T_{i, j} \leq 10^4$
