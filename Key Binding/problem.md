@@ -13,6 +13,6 @@ Output the matching result.
 - $|S| = N$
 - $1 \leq M \leq 10^2$
 - $1 \leq |b_i|$
-- $\sum |b_i \leq 10^5$
-- $1 \leq c_j \leq 10^5$
+- $\sum |b_i| \leq 10^5$
+- $1 \leq c_j \leq 10^4$
 - $S$ and $b_i$ consists of printable ASCII characters found on a standard US keyboard
