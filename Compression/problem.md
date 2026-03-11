@@ -12,6 +12,7 @@ Solve the minimum cost to achieve a full text conversion.
 - $1 \leq N \leq 10^5$
 - $S$ consists of general characters
 - $b_i$ consists of general characters
+- $1 \leq M \leq 10^2$
 - $\sum |b_i| \leq 10^5$
 - $i \neq j \to b_i \neq b_j$
 - $1 \leq c_i \leq 10^5$
