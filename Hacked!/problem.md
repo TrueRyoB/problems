@@ -4,7 +4,7 @@ Your operating system has been hacked! A virus has taken exclusive control of yo
 
 The virus is running $M$ periodic processes, where process $i$ requires $W_i$ amount of computation time with the deadline $D_i$ for per cycle.
 
-All processes are initiated simultaneously at $t = 0$. Assuming that the virus uses an optimal scheduling strategy, determine the earliest time at which the system will crash due to a process missing its deadline. If the system can run indefinitely, return -1 instead.
+All processes are initiated simultaneously at $t = 0$. Assuming that the virus uses an optimal scheduling strategy, determine the earliest time mod $998244353$ at which the system will crash due to a process missing its deadline. If the system can run indefinitely, return -1 instead.
 
 ### Constraints
 - $1 \leq N \lt M \leq 10^5$
