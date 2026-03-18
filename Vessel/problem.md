@@ -8,7 +8,7 @@ Let $v_i$ denote the current volume of water in cup $i$. At any step, you may pe
 2.  **Drain:** For any $i \in \{1, \dots, N\}$, set $v_i = \max(0, v_i - X)$.
 3.  **Pour:** For any pair $(i, j)$ where $i \neq j$, transfer $\Delta = \min(v_i, C_j - v_j)$ from cup $i$ to cup $j$. 
 
-Determine if it is possible to reach a target state $A = (A_1, A_2, \dots, A_N)$.
+Determine the minimum number of steps to reach a target state $A = (A_1, A_2, \dots, A_N)$ when possible or return $-1$ instead.
 
 ### Mathematical Constraints
 - $1 \leq N \leq 10^4$
