@@ -5,7 +5,7 @@ There are $N$ vessels with maximum capacities $C_i$ for vessel $i$. Initially, a
 Let $v_i$ denote the current volume of water in cup $i$. At any step, you may perform one of the following:
 
 1.  **Fill:** For any $i \in \{1, \dots, N\}$, set $v_i = C_i$.
-2.  **Drink:** For any $i \in \{1, \dots, N\}$, set $v_i = \max(0, v_i - X)$.
+2.  **Drain:** For any $i \in \{1, \dots, N\}$, set $v_i = \max(0, v_i - X)$.
 3.  **Pour:** For any pair $(i, j)$ where $i \neq j$, transfer $\Delta = \min(v_i, C_j - v_j)$ from cup $i$ to cup $j$. 
 
 Determine if it is possible to reach a target state $A = (A_1, A_2, \dots, A_N)$.
