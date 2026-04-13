@@ -3,7 +3,7 @@ A factory has $N$ characters of 'a', $M$ of 'b', and $L$ of 'c'.
 
 Each individual character is distinct and has a unique value: $A_i$ for the $i$-th 'a',  $B_i$ for the $i$-th 'b', and $C_i$ for the $i$-th 'c'.
 
-Strings are formed by appending characters one by one. A string is completed and shipped immediately as soon as its suffix matches any of the following conditions:
+Strings are formed by pushing back characters one by one. A string is completed and shipped immediately as soon as its suffix matches any of the following conditions:
 
 - The suffix is "ab"
 - The suffix is "bc"
