@@ -11,7 +11,7 @@ Strings are formed by pushing back characters one by one. A string is completed 
 
 After a string is shipped, you may choose to either start forming a new string or terminate the process. You do not need to use all available characters.
 
-Find the sum of the total values of all possible combinations of shipped strings modulo $9982442353$.
+Find the sum of the total values of all possible combinations of shipped strings modulo $998244353$.
 
 Note: a "combination" is defined as a multiset of shipped strings. This means the internal order of characters within each string matters, but the order in which the strings themselves are shipped does not.
 
