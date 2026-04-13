@@ -1,7 +1,7 @@
 ## Jurassic World
 On your way home, you figure out that there are $N$ dinosaurs behind you. Dinosaur $i$ is currently at position $P_i$ relative to you.
 
-Let $x$ be the current position of a dinosaur; at each step, it independently chooses an integer $y$ uniformly at random such that $0 \leq t \leq x$, and moves to position $y$.
+Let $x$ be the current position of a dinosaur; at each step, it independently chooses an integer $y$ uniformly at random such that $0 \leq y \leq x$, and moves to position $y$.
 
 If multiple dinosaurs teleport to the same position simultaneously, they fist fight until only one remains, and the others are eliminated.
 
