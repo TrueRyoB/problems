@@ -8,7 +8,7 @@ If multiple dinosaurs teleport to the same position simultaneously, they fist fi
 The dinosaurs repeat this process for exactly $M$ steps before your ally arrives.
 If any dinosaur reaches position $0$ at or before the end of the $M$-th step, you are caught.
 
-Solve the probability that you survive.
+Solve the probability that you survive modulo $998244353$.
 
 ### Constraints
 - $1 \leq N \leq 10^5$
