@@ -14,5 +14,4 @@ Solve the probability that you survive.
 - $1 \leq N \leq 10^5$
 - $1 \leq P_i \leq 10^9$
 - All $P_i$ are distinct
-- $1 \leq M \leq 10^9$
-
+- $1 \leq M \leq 10^4$
