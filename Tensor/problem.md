@@ -10,4 +10,4 @@ Solve its maximum subspace by indicating a vertex for each of its corner.
 - $1 \leq T \leq 10$
 - $1 \leq N \leq 20$
 - $1 \leq R_i \leq 10^5$
-- $|A_{i,j,...z}| \leq 10^10$
+- $|A_{i,j,...z}| \leq 10^{10}$
