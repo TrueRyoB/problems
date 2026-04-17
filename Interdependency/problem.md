@@ -1,6 +1,6 @@
 ## Interdependency
 
-There is an array $A$ at length $N$, consisting of real numbers.
+There is an array $A$ at length $N$, consisting of natural numbers.
 
 Solve the minimum number of operations to match it to an array $B$.
 
