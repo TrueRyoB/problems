@@ -1,4 +1,4 @@
-## Loop
+## Interdependency
 
 There is an array $A$ at length $N$, consisting of real numbers.
 
