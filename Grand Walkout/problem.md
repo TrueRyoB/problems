@@ -12,13 +12,13 @@ The theater contains three types of cells:
 You can perform two types of actions:
 
 1. **Move**: Move to an adjacent cell (up, down, left, or right) if the target cell is not in state `A`. This action has a cost of $0$.
-2. **Toggle**: Choose a cell $(i_0, j_0)$ that is **4-adjacent** to your current position. Perform a toggle on the **cross** centered at $(i_0, j_0)$. This action has a cost of $1$.
+2. **Toggle (Query)**: Choose a cell $(i_0, j_0)$ that is **4-adjacent** to your current position. Perform a **Full-Cross Toggle** centered at $(i_0, j_0)$. This action has a **cost of 1**.
 
-**The Toggle Operation:**
-A "cross" consists of the center cell $(i_0, j_0)$ and its four immediate neighbors: $(i_0-1, j_0), (i_0+1, j_0), (i_0, j_0-1),$ and $(i_0, j_0+1)$. For every cell in this cross:
-* If the cell is `I`, it becomes `A`.
-* If the cell is `A`, it becomes `I`.
-* If the cell is `.`, it remains unchanged.
+**The Full-Cross Toggle Operation:**
+When you toggle at $(i_0, j_0)$, every occupied seat (state `I` or `A`) located in **row $i_0$** or **column $j_0$** changes its state:
+* If the seat is `I`, it becomes `A`.
+* If the seat is `A`, it becomes `I`.
+* Walkway cells (`.`) are unaffected.
 
 All changes made by a Toggle persist as you continue to move through the theater.
 
