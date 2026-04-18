@@ -1,4 +1,4 @@
-# Grandmaster at Employment
+# Logical Employment
 
 ## Problem Description
 
