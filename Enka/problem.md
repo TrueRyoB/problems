@@ -10,8 +10,6 @@ You are given $Q$ queries.
 
 For each query, solve the number of possible combinations of participants to their number modulo $998244353$, when person $x$ has integer $B_x$.
 
-If the number of pattern is infinite, return $-1$ instead.
-
 
 ### Constarints
 
