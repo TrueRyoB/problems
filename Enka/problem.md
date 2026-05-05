@@ -4,7 +4,7 @@ $N$ people are lined up in a circle. Person $i$ is next to person $(i+N-1) \mod 
 
 Each participant has a nonnegative integer.
 
-Each of them report the absolute value of the difference of the integers of their subsequent two people to be $A_i$.
+Each of them reports the absolute difference of integers of their subsequent two people to be $A_i$.
 
 You are given $Q$ queries.
 
