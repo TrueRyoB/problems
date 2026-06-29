@@ -4,7 +4,7 @@ There are $N$ people on a side of the long bridge. Person $i$ takes at least $A_
 
 The bridge is fragile; therefore, only $M$ passengers can be on the bridge simultaneously.
 
-Additionally, it is dark outside, so each group of people must have at least one light source with them. They have $L$ of them in total.
+Additionally, it is dark outside, so each group of people on the bridge must have at least one light source with them. They have $L$ of them in total.
 
 Solve the minimum amount of time for all of them to arrive on the other side of the bridge.
 
