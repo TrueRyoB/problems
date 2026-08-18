@@ -13,9 +13,9 @@
 
 問題文を最後まで読むと、途中にspreadsheetのリンクがあることに気が付きます。
 
-要素数が10^5個あり、これは制約の上限と一致するため、これをそのまま貼り付ければ`AC`です。([提出例](https://github.com/TrueRyoB/problems/blob/main/human%20slop/sample-submission1.cpp))
+要素数が10^5個あり、これは制約の上限と一致するため、これをそのまま貼り付ければ`AC`です。([提出例](https://github.com/TrueRyoB/problems/blob/main/human%20slop/sample-submission/1.cpp))
 
-また、MojaCoderに限り、linuxコマンドを駆使することで、貼り付ける要素を最小限に留める工夫もあります。([提出例](https://github.com/TrueRyoB/problems/blob/main/human%20slop/sample-submission2.py))
+また、MojaCoderに限り、linuxコマンドを駆使することで、貼り付ける要素を最小限に留める工夫もあります。([提出例](https://github.com/TrueRyoB/problems/blob/main/human%20slop/sample-submission/2.py))
 
 
 ##### 構築解法 (想定)
@@ -24,7 +24,7 @@
 
 この際、発音可能であることが必要条件に含まれることが分かります。
 
-あり得る子音と母音の組み合わせを、命名制約の長さの範囲内に留まるように組み合わせれば`AC`が得られます。([提出例](https://github.com/TrueRyoB/problems/blob/main/human%20slop/sample-submission3.rb))
+あり得る子音と母音の組み合わせを、命名制約の長さの範囲内に留まるように組み合わせれば`AC`が得られます。([提出例](https://github.com/TrueRyoB/problems/blob/main/human%20slop/sample-submission/3.rb))
 
 確率的な解法であるため、Nが小さい場合に、100%受理されるような場合分けを差し込んでおくことが安牌です。
 
