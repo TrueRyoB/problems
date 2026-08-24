@@ -6,13 +6,16 @@ Warning: not all problems have solutions attached.
  ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=TrueRyoB.problems)
 
 ## Recommended
+### With solutions
 - [Mermaid](https://github.com/TrueRyoB/problems/blob/main/Mermaid/problem.md)
+- [human slop](https://github.com/TrueRyoB/problems/blob/main/human%20slop/problem.md)
+
+### Unsolved
 - [Key Binding](https://github.com/TrueRyoB/problems/blob/main/Key%20Binding/problem.md)
 - [aTAM](https://github.com/TrueRyoB/problems/blob/main/aTAM/problem.md)
 - [String Factory](https://github.com/TrueRyoB/problems/blob/main/String%20Factory/problem.md)
 - [Jurassic World](https://github.com/TrueRyoB/problems/blob/main/Jurassic%20World/problem.md)
 - [Logical Employment](https://github.com/TrueRyoB/problems/blob/main/Logical%20Employment/problem.md)
-- [human slop](https://github.com/TrueRyoB/problems/blob/main/human%20slop/problem.md)
 
 ## License
 MIT License
